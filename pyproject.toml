@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "New_year_project"
+version = "0.1.0"
+description = ""
+authors = ["Andrey Nikel <nikelandrey94@gmail.com>"]
+readme = "README.md"
+packages = [
+  { include = "new-year-ivent" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.scripts]
+ivent = "new-year-ivent.game:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
